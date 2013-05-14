@@ -1,0 +1,55 @@
+body {
+
+}
+
+.navbar-inner {
+	height: 55px;
+	background-color: white;
+	background-image: none; /* overwrites bootstraps background image nav defualt */
+
+}
+
+.navbar .brand {
+	color: #ff9331;
+	font-size: 32px;
+	text-shadow: 0 0px 0 white; /* overwrites bootstrap's default text shadow on brand class */
+	margin: 10px 0px 0px 0px;
+}
+
+.navbar .nav {
+	float: right;
+
+}
+
+.navbar .nav > li > a {
+	text-shadow: 0 0px 0 black; /* overwrite for bootsrap default text-shadow */
+	color: #ababab;
+	font-size: 20px;
+	padding: 20px 15px 10px;
+
+}	
+
+.navbar .nav > .active > a {
+	color: black;
+	-webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0); /* overwrites bootstraps defualt nav box shadows */
+	-moz-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0); /* box shadow overwrite for firefox */
+	background-color: transparent;
+
+}
+
+.navbar .nav > .active > a:hover {
+	background-color: transparent;
+	color: black;
+	-webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0); /* overwrites bootstraps defualt nav box shadows */
+	-moz-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0); /* box shadow overwrite for firefox */
+
+}
+
+.navbar-fixed-top .navbar-inner,
+.navbar-fixed-bottom .navbar-inner {
+  padding-right: 0;
+  padding-left: 0;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
