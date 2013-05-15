@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Lifechoicemeals</title>
+  <title>LifeChoiceMeals</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -10,12 +10,16 @@
 
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
-    <a class="brand" href="#">LifeChoiceMeals</a>
+  	<a href="/" class="brand">
+  		<%= image_tag 'logo-icon-min.png', id: 'logo-icon' %>
+    	LifeChoiceMeals
+    </a>
     <ul class="nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Products</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><%= link_to 'Home', :root, id: 'home-link' %></li>
+      <li><%= link_to 'Products', '#', id: 'products-link' %></li>
+      <li><%= link_to 'About', '#', id: 'about-link' %></li>
+      <li><%= link_to 'Contact', '#', id: 'contact-link' %></li>
+      <li><%= link_to 'Log In', '#', id: 'login-link' %></li>
     </ul>
   </div>
 </div>

@@ -1,5 +1,5 @@
 body {
-
+	padding-top: 60px;
 }
 
 .navbar-inner {
@@ -10,10 +10,14 @@ body {
 }
 
 .navbar .brand {
-	color: #ff9331;
+	color: black;
 	font-size: 32px;
 	text-shadow: 0 0px 0 white; /* overwrites bootstrap's default text shadow on brand class */
 	margin: 10px 0px 0px 0px;
+}
+
+#logo-icon {
+	margin-top: -3px;
 }
 
 .navbar .nav {
