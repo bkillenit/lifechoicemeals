@@ -1,5 +1,8 @@
 Lifechoicemeals::Application.routes.draw do
 
+  resources :products
+
+
   get "landing/index"
   get "landing/products"
   get "landing/about"
