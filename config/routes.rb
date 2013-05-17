@@ -1,6 +1,9 @@
 Lifechoicemeals::Application.routes.draw do
 
   get "landing/index"
+  get "landing/products"
+  get "landing/about"
+  get "landing/contact"
 
   root :to => "landing#index"
 

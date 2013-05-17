@@ -57,3 +57,11 @@ body {
      -moz-border-radius: 0;
           border-radius: 0;
 }
+
+#login-link {
+	color: #dc1510;
+}
+
+#login-link:hover {
+	color: black;
+}
