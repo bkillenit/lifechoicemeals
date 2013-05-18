@@ -1,5 +1,10 @@
 body {
 	padding-top: 60px;
+	text-align: center;
+}
+
+#content {
+	margin: 0 auto;
 }
 
 .navbar-inner {
