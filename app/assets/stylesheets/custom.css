@@ -8,17 +8,17 @@ body {
 }
 
 .navbar-inner {
-	height: 55px;
+	height: 81px;
 	background-color: white;
 	background-image: none; /* overwrites bootstraps background image nav defualt */
-
 }
 
 .navbar .brand {
+	position: relative;
 	color: black;
 	font-size: 32px;
 	text-shadow: 0 0px 0 white; /* overwrites bootstrap's default text shadow on brand class */
-	margin: 10px 0px 0px 0px;
+	margin: 20px 0px 0px 0px;
 }
 
 #logo-icon {
@@ -27,15 +27,17 @@ body {
 
 .navbar .nav {
 	float: right;
+}
 
+.navbar-text {
+	text-align: right;
 }
 
 .navbar .nav > li > a {
 	text-shadow: 0 0px 0 black; /* overwrite for bootsrap default text-shadow */
 	color: #ababab;
-	font-size: 20px;
-	padding: 20px 15px 10px;
-
+	font-size: 1.1em;
+	margin-top: -5px
 }	
 
 .navbar .nav > .active > a {
@@ -43,7 +45,6 @@ body {
 	-webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0); /* overwrites bootstraps defualt nav box shadows */
 	-moz-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0); /* box shadow overwrite for firefox */
 	background-color: transparent;
-
 }
 
 .navbar .nav > .active > a:hover {
@@ -51,7 +52,6 @@ body {
 	color: black;
 	-webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0); /* overwrites bootstraps defualt nav box shadows */
 	-moz-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0); /* box shadow overwrite for firefox */
-
 }
 
 .navbar-fixed-top .navbar-inner,
@@ -63,10 +63,88 @@ body {
           border-radius: 0;
 }
 
-#login-link {
-	color: #dc1510;
+.navbar .divider-vertical {
+	height: 30px;
 }
 
-#login-link:hover {
-	color: black;
+/* ----------- Tiny-Carousel Plugin CSS ----------- */
+
+#slider-code { 
+	height: 280px; 
+	overflow:hidden; 
+}
+
+#slider-code .viewport { 
+	float: left; 
+	width: 520px; 
+	height: 240px; 
+	overflow: hidden; 
+	position: relative; 
+}
+
+#slider-code .buttons { 
+	display: block; 
+	margin: 30px 10px 0 0; 
+	float: left; 
+}
+#slider-code .next {
+ 	margin: 30px 0 0 10px;  
+}
+
+#slider-code .disable { 
+	visibility: hidden; 
+}
+
+#slider-code .overview { 
+	list-style: none; 
+	position: absolute; 
+	padding: 0; 
+	margin: 0; 
+	left: 0; 
+	top: 0; 
+}
+
+#slider-code .overview li{ 
+	float: left; 
+	margin: 0 20px 0 0; 
+	padding: 1px; 
+	height: 230px; 
+	border: 1px solid #dcdcdc; 
+	width: 500px;
+}
+
+#slider-code .pager { 
+	overflow:hidden; 
+	list-style: none; 
+	clear: both; 
+	margin: 0 0 0 210px; 
+}
+
+#slider-code .pager li { 
+	float: left; 
+}
+
+#slider-code .pagenum { 
+	background-color: #fff; 
+	text-decoration: none; 
+	text-align: center; 
+	padding: 3px 10px; 
+	margin: 0px 10px;
+	color: #555555; 
+	font-size: 14px; 
+	font-weight: bold; 
+	display: block; 
+	border-radius: 0px;
+}
+
+#slider-code .active { 
+	color: #fff; 
+	background-color: gray; 
+}
+
+/* ------------------------------------------------ */
+
+footer {
+	color: #CCCCCC;
+	border-top: 1px solid #CCCCCC;
 }
