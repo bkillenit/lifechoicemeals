@@ -80,4 +80,14 @@ class ProductsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def listing
+    @products = Product.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @products }
+    end
+  end
+
 end

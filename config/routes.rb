@@ -1,7 +1,8 @@
 Lifechoicemeals::Application.routes.draw do
 
-  resources :products
+  get "products/listing"
 
+  resources :products
 
   get "landing/index"
   get "landing/products"

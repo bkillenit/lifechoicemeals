@@ -1,10 +1,10 @@
 body {
-	padding-top: 90px;
-	text-align: center;
+	padding-top: 85px;
 }
 
 #content {
 	margin: 0 auto;
+	text-align: center;
 }
 
 .navbar-inner {
@@ -110,7 +110,7 @@ body {
 	padding: 1px; 
 	height: 230px; 
 	border: 1px solid #dcdcdc; 
-	width: 500px;
+	width: 515px;
 }
 
 #slider-code .pager { 
